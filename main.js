@@ -29,8 +29,7 @@ function getTopNews() {
         newArticle.innerHTML = template.innerHTML;
         template.parentElement.insertBefore(newArticle, template);
 
-        newArticle.querySelector("h3").innerText = article.title;
-        newArticle.querySelector("span").innerText = ` ${new Date(
+        newArticle.querySelector("h3").innerText = ` ${article.title} ${new Date(
           article.publishedAt
         ).toLocaleDateString()} `;
         newArticle.querySelector("h4").innerText = ` ${article.description} `;
