@@ -1,0 +1,23 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+div img{
+  width:70%;
+  height: auto;
+}
+
+/* maybe add flex here to have side by side images */
